@@ -2,7 +2,7 @@ import { StrengthCard } from "./StrengthCard";
 import { Title } from "./Title";
 
 type Props = {
-    strengths: { title: string; text: string }[];
+    strengths: { header: string; text: string }[];
 };
 
 export const StrengthsSection = ({ strengths }: Props) => {

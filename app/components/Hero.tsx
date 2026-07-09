@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { landingTexts } from "../texts";
+import { landingData } from "../data";
 
 export const Hero = () => {
-    const texts = landingTexts;
+    const data = landingData;
 
     return (
         <div className="w-full h-[75svh] max-h-[650px] px-15 lg:px-40 py-10 flex flex-col justify-between items-center font-display">
@@ -20,14 +20,14 @@ export const Hero = () => {
                 />
                 <div className="flex flex-col gap-y-3 md:gap-y-8 items-center shrink-0 md:px-5">
                     <h2 className="font-bold text-2xl md:text-3xl">
-                        {texts.hero.nameJp}
+                        {data.hero.nameJp}
                     </h2>
                     <div className="flex flex-col md:gap-y-2 items-center text-center">
                         <h3 className="font-semibold text-xl md:text-2xl">
-                            {texts.hero.nameEn}
+                            {data.hero.nameEn}
                         </h3>
                         <h4 className="font-semibold text-lg md:text-xl">
-                            {texts.hero.job}
+                            {data.hero.job}
                         </h4>
                     </div>
                 </div>
