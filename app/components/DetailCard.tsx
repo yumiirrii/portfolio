@@ -19,7 +19,7 @@ type Props = {
 
 export const DetailCard = ({ detail }: Props) => {
     return (
-        <div className="w-full p-10 flex flex-col gap-y-10 border border-[#272727] rounded-4xl">
+        <div className="w-full p-4 sm:p-10 flex flex-col gap-y-10 border border-[#272727] rounded-4xl">
             {/* hero */}
             <div className="flex flex-col flex-col-reverse lg:flex-row gap-10 justify-between">
                 <div className="flex flex-col gap-y-20 flex-1 shrink">
@@ -88,11 +88,11 @@ export const DetailCard = ({ detail }: Props) => {
                         text={detail.challenges}
                     />
                     {/* buttons */}
-                    <div className="flex-1 flex flex-col gap-y-5 w-full justify-end">
-                        <div className="flex justify-end">
+                    <div className="flex-1 flex flex-col gap-y-5 w-full justify-center sm:justify-end">
+                        <div className="flex justify-center sm:justify-end">
                             <Button label="Live Demo" state="primary" />
                         </div>
-                        <div className="flex gap-x-5 justify-end">
+                        <div className="flex flex-row gap-x-5 justify-center sm:justify-end">
                             <Button label="View Figma" state="secondary" />
                             <Button label="View GitHub" state="secondary" />
                         </div>

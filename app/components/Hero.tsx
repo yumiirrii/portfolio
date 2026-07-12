@@ -5,17 +5,18 @@ export const Hero = () => {
     const data = landingData;
 
     return (
-        <div className="w-full h-[75svh] max-h-[650px] px-15 lg:px-40 py-10 flex flex-col justify-between items-center font-display">
-            <h1 className="text-[7.5vw] lg:text-[100px] font-bold text-nowrap">
-                DESIGN & CODE
+        <div className="w-full h-auto md:min-h-[75svh] md:max-h-[650px] px-15 md:px-20 xl:px-40 py-10 flex flex-col justify-start gap-y-10 md:justify-between items-center font-display">
+            {/* <h1 className="text-[7.5vw] lg:text-[100px] font-bold text-nowrap [-webkit-text-stroke:1px_black]"> */}
+            <h1 className="text-[60px] md:text-[80px] lg:text-[100px] font-bold text-center whitespace-pre-wrap sm:whitespace-nowrap leading-[1.0] sm:leading-normal [-webkit-text-stroke:1px_black]">
+                {`DESIGN\n & \nCODE`}
             </h1>
-            <div className="w-full flex flex-col md:flex-row flex-col-reverse gap-y-8 items-center md:justify-between flex-1">
+            <div className="w-full flex flex-col md:flex-row flex-col-reverse gap-y-8 items-center md:justify-between md:flex-1 min-h-0">
                 <Image
                     src="/laptop-left.png"
                     width={368}
                     height={230}
                     alt="left laptop image"
-                    className="hidden md:flex md:w-[368px] w-full h-auto object-contain"
+                    className="hidden md:block md:w-[368px] h-auto object-contain"
                     priority
                 />
                 <div className="flex flex-col gap-y-3 md:gap-y-8 items-center shrink-0 md:px-5">
@@ -36,7 +37,7 @@ export const Hero = () => {
                     width={368}
                     height={230}
                     alt="right laptop image"
-                    className="md:w-[368px] w-full h-auto object-contain"
+                    className="w-[200px] md:w-[368px] max-w-full h-auto object-contain"
                     priority
                 />
             </div>
