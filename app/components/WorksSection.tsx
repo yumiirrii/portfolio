@@ -42,7 +42,7 @@ export const WorksSection = ({ works }: Props) => {
                         <p className="font-display font-bold text-2xl">
                             Other Works
                         </p>
-                        <div className="flex-1 flex flex-col justify-between pt-10 pr-5 pb-5 pl-5 md:pl-10 xl:pl-5 border border-[#272727] rounded-4xl">
+                        <div className="flex-1 flex flex-col justify-between pt-10 pr-5 pb-5 pl-5 md:pl-10 xl:pl-5 border-1 border-[#272727] rounded-4xl">
                             <div className="flex flex-col gap-y-4">
                                 {works.others.map((work) => (
                                     <div
@@ -59,7 +59,7 @@ export const WorksSection = ({ works }: Props) => {
                                 ))}
                             </div>
                             <div className="w-full flex justify-end pt-5 mt-auto">
-                                <Link href="">
+                                <Link href="/work/others">
                                     <Button
                                         label="View All Other Works"
                                         state="primary"

@@ -6,8 +6,10 @@ type Props = {
 
 export const Button = ({ label, state, onClick }: Props) => {
     const styles = {
-        primary: "bg-[#272727] text-white",
-        secondary: "border-1 border-black text-black",
+        primary:
+            "bg-[#272727] text-white transition-opacity duration-200 hover:opacity-60 active:opacity-30",
+        secondary:
+            "border-1 border-black text-black transition-colors duration-200 hover:bg-black/5 active:bg-black/10",
     };
     return (
         <button

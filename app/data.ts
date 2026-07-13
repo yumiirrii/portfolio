@@ -1,10 +1,16 @@
+export const navMenu = [
+    { page: "Home", path: "/" },
+    { page: "About", path: "/" },
+    { page: "Works", path: "/" },
+];
+
 export const landingData = {
     hero: {
         nameJp: "入入 入入入",
         nameEn: "Yyyyyy Iiiiiii",
         job: "Frontend Engineer",
     },
-    introduction: {
+    about: {
         aboutMe:
             "エンジニア歴は6年です。バックエンド開発を3年経験した後、デザインやUI/UXへの関心から、現在はフロントエンド開発を行っています。\n個人開発では、Figmaを用いたデザインから実装まで一貫して取り組んでいます。使いやすさだけでなく、見た目の美しさとの両立を意識しながら、細部まで丁寧に作り込むことを心掛けています。",
         strengths: [
@@ -55,14 +61,14 @@ export const landingData = {
                 name: "METAMORF",
                 text: "架空コスメティックブランド商品管理アプリ",
                 year: "2026",
-                path: "/work/featured",
+                path: "/work/metamorf",
             },
             {
                 imageUrl: "/works-travelog.png",
                 name: "TRAVELOG",
                 text: "旅行の記録アーカイブアプリ",
                 year: "2026",
-                path: "/work/featured",
+                path: "/work/travelog",
             },
         ],
         others: [
@@ -82,8 +88,8 @@ export const landingData = {
     },
 };
 
-export const featuredDetailData = [
-    {
+export const featuredDetailData = {
+    metamorf: {
         topImage: "/detail-metamorf-top.png",
         figmaImage: "/detail-metamorf-figma.png",
         pcImage: "/detail-metamorf-pc.png",
@@ -98,12 +104,27 @@ export const featuredDetailData = [
         challenges:
             "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
     },
+    travelog: {
+        topImage: "/detail-travelog-top.png",
+        figmaImage: "/detail-travelog-figma.png",
+        pcImage: "/detail-travelog-pc.png",
+        mobileImage: "/detail-travelog-mobile.png",
+        name: "TRAVELOG",
+        overview:
+            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
+        year: "2026.06",
+        concept:
+            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
+        challenges:
+            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+    },
+};
+
+export const othersDetailData = [
     {
-        topImage: "/detail-metamorf-top.png",
         figmaImage: "/detail-metamorf-figma.png",
-        pcImage: "/detail-metamorf-pc.png",
-        mobileImage: "/detail-metamorf-mobile.png",
-        name: "METAMORFF",
+        name: "METAMORF",
         overview:
             "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
         year: "2026.06",

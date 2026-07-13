@@ -14,7 +14,7 @@ type Props = {
 
 export const WorkCard = ({ work }: Props) => {
     return (
-        <div className="w-full max-w-[420px] h-auto flex flex-col overflow-hidden border border-[#272727] rounded-4xl">
+        <div className="w-full max-w-[420px] h-auto flex flex-col overflow-hidden border-1 border-[#272727] rounded-4xl">
             <Image
                 src={work.imageUrl}
                 width={420}

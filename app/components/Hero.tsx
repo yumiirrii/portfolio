@@ -5,7 +5,8 @@ export const Hero = () => {
     const data = landingData;
 
     return (
-        <div className="w-full h-auto md:min-h-[75svh] md:max-h-[650px] px-15 md:px-20 xl:px-40 py-10 flex flex-col justify-start gap-y-10 md:justify-between items-center font-display">
+        <div className="w-full h-auto md:min-h-[67svh] md:max-h-[650px] px-15 md:px-20 xl:px-40 py-5 md:py-0 flex flex-col justify-start gap-y-5 md:gap-y-0 md:justify-between items-center font-display">
+            {/* <div className="w-full h-auto md:min-h-[75svh] md:max-h-[650px] px-15 md:px-20 xl:px-40 py-10 flex flex-col justify-start gap-y-10 md:justify-between items-center font-display"> */}
             {/* <h1 className="text-[7.5vw] lg:text-[100px] font-bold text-nowrap [-webkit-text-stroke:1px_black]"> */}
             <h1 className="text-[60px] md:text-[80px] lg:text-[100px] font-bold text-center whitespace-pre-wrap sm:whitespace-nowrap leading-[1.0] sm:leading-normal [-webkit-text-stroke:1px_black]">
                 {`DESIGN\n & \nCODE`}
