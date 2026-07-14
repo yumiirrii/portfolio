@@ -4,7 +4,8 @@ import { HeaderBlock } from "./HeaderBlock";
 
 type Props = {
     detail: {
-        figmaImage: string;
+        mainImage: string;
+        largeImage: string;
         name: string;
         overview: string;
         year: string;
@@ -46,10 +47,10 @@ export const OthersDetailCard = ({ detail }: Props) => {
             </div>
 
             {/* figma image */}
-            <div className="flex flex-col lg:flex-row gap-10">
-                <div className="flex-1 min-w-0 max-w-[450px]">
+            <div className="flex flex-col lg:flex-row gap-10 justify-center">
+                <div className="flex-[3] min-w-0 max-w-[450px]">
                     <Image
-                        src={detail.figmaImage}
+                        src={detail.mainImage}
                         width={450}
                         height={300}
                         alt="work detail app figma before"
@@ -57,10 +58,10 @@ export const OthersDetailCard = ({ detail }: Props) => {
                         priority
                     />
                 </div>
-                <div className="flex-1 min-w-0 max-w-[450px]">
+                <div className={`flex-[4] min-w-0 max-w-[600px]`}>
                     <Image
-                        src={detail.figmaImage}
-                        width={450}
+                        src={detail.largeImage}
+                        width={600}
                         height={300}
                         alt="work detail app figma after"
                         className="w-full h-auto object-contain"

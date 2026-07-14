@@ -8,7 +8,7 @@ export default function WorkOthers() {
     return (
         <div className="landing-bg bg-cover w-full min-h-screen flex flex-col">
             <NavigationBar />
-            <div className="px-5 sm:px-20 xl:px-40 pt-10 pb-15">
+            <div className="px-5 sm:px-20 xl:px-40 pt-10 pb-15 flex flex-col gap-y-10">
                 {data.map((detail) => (
                     <OthersDetailCard key={detail.name} detail={detail} />
                 ))}

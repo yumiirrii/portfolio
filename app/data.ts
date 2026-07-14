@@ -123,8 +123,35 @@ export const featuredDetailData = {
 
 export const othersDetailData = [
     {
-        figmaImage: "/detail-metamorf-figma.png",
-        name: "METAMORF",
+        mainImage: "/detail-reportmaker-main.png",
+        largeImage: "/detail-reportmaker-large.png",
+        name: "REPORT MAKER",
+        overview:
+            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
+        year: "2026.06",
+        concept:
+            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
+        challenges:
+            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+    },
+    {
+        mainImage: "/detail-movingapp-main.png",
+        largeImage: "/detail-movingapp-large.png",
+        name: "moving app",
+        overview:
+            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
+        year: "2026.06",
+        concept:
+            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
+        challenges:
+            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+    },
+    {
+        mainImage: "/detail-artistapp-main.png",
+        largeImage: "/detail-artistapp-large.png",
+        name: "artist app",
         overview:
             "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
         year: "2026.06",
