@@ -1,7 +1,7 @@
 export const navMenu = [
     { page: "Home", path: "/" },
-    { page: "About", path: "/" },
-    { page: "Works", path: "/" },
+    { page: "About", path: "/#about" },
+    { page: "Works", path: "/#works" },
 ];
 
 export const landingData = {
@@ -24,11 +24,11 @@ export const landingData = {
             },
             {
                 header: "バックエンド開発経験を活かした設計・実装",
-                text: "API仕様やデータ構造を踏まえ、デザイン・フロントエンド・バックエンドのつながりを意識した設計・実装を行っています。",
+                text: "API仕様やデータ構造を理解した上で、デザイン・フロントエンド・バックエンドのつながりを意識し、広い視点で開発を行っています。",
             },
             {
-                header: "航空会社での実務経験を背景としたコミュニケーション能力",
-                text: "エンジニア以前の航空会社での顧客対応・現場調整経験を通じて培ったユーザー視点とコミュニケーション力を、チーム開発にも活かしています。",
+                header: "航空会社での実務経験を背景としたコミュニケーション力",
+                text: "エンジニア以前の航空会社での顧客対応・現場調整経験で培ったコミュニケーション力と英語力を活かし、多様なメンバーと円滑に協働することができます。",
             },
             {
                 header: "継続的な個人開発・キャッチアップ",
@@ -52,6 +52,10 @@ export const landingData = {
                 header: "Cloud",
                 text: "Firebase / AWS / Vercel",
             },
+            {
+                header: "Certifications",
+                text: "基本情報技術者 / Java Silver SE 11 / HTML5プロフェッショナル レベル1 / TOEIC 905",
+            },
         ],
     },
     works: {
@@ -59,7 +63,7 @@ export const landingData = {
             {
                 imageUrl: "/works-metamorf.png",
                 name: "METAMORF",
-                text: "架空コスメティックブランド商品管理アプリ",
+                text: "架空コスメティックブランドアプリ",
                 year: "2026",
                 path: "/work/metamorf",
             },
@@ -74,15 +78,15 @@ export const landingData = {
         others: [
             {
                 name: "Report Maker",
-                text: "週報作成アプリ",
+                text: "ウィークリーレポート作成アプリ",
             },
             {
-                name: "Report Maker2",
-                text: "週報作成アプリ",
+                name: "Moving App",
+                text: "引っ越しタスク管理アプリ",
             },
             {
-                name: "Report Maker3",
-                text: "週報作成アプリ",
+                name: "Artist App",
+                text: "現代アートをテーマにしたキュレーションアプリ",
             },
         ],
     },
@@ -95,14 +99,22 @@ export const featuredDetailData = {
         pcImage: "/detail-metamorf-pc.png",
         mobileImage: "/detail-metamorf-mobile.png",
         name: "METAMORF",
+        subName: "Cosmetic Catalog App",
         overview:
-            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
+            "架空のコスメティックブランド「METAMORF」の商品閲覧・管理アプリ。ブランドイメージを反映したUIをデザインし、商品の閲覧・登録・編集・削除機能を実装しました。",
         year: "2026.06",
         concept:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
-        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
-        challenges:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+            "ストリートアパレルブランドを着想に、大胆なグラフィックを採用し、ミニマルなレイアウトと組み合わせました。クールトーンを基調に、コスメのリキッドやグロッシーな質感、ミントブルーをアクセントとして取り入れ、大胆なビジュアルと洗練されたUIのバランスを意識しました。",
+        stack: "Next.js / TypeScript / Tailwind CSS /\nReact Hook Form / Zod /\nPrisma / PostgreSQL / Neon /\nDocker / Vercel /\nHeroicons / Sonner",
+        challenges: [
+            "Figmaでデザインカンプを制作し、Next.jsとTailwind CSSを用いてピクセル単位で忠実にUIを再現しました。",
+            "React Hook Form・Zod・Prismaを用いて、型安全なフォームバリデーションとデータ管理を実装し、保守性を意識した構成にしました。",
+            "レスポンシブデザインに対応し、デスクトップからモバイルまで、一貫したブランドイメージと操作性を維持できるUIを設計・実装しました。",
+        ],
+        demoUrl: "https://cosmetic-app-lovat.vercel.app/",
+        figmaUrl:
+            "https://www.figma.com/design/vnP31nIxxD68gohWPgbqBO/Portfolio?node-id=0-1&t=5AXzkMJUDuGmGoLs-1",
+        githubUrl: "https://github.com/yumiirrii/cosmetic-app",
     },
     travelog: {
         topImage: "/detail-travelog-top.png",
@@ -110,14 +122,22 @@ export const featuredDetailData = {
         pcImage: "/detail-travelog-pc.png",
         mobileImage: "/detail-travelog-mobile.png",
         name: "TRAVELOG",
+        subName: "Travel Data Archive App",
         overview:
-            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
-        year: "2026.06",
+            "旅行で訪れた印象的な場所を記録・管理するトラベルアーカイブアプリ。旅行記録の閲覧・登録・編集・削除機能を実装しました。",
+        year: "2026.06 (v3)\nPrevious Versions: 2025.08 (v1) / 2025.11 (v2)",
         concept:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
-        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
-        challenges:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+            "1980年代に描かれたレトロフューチャーをコンセプトに、当時のコンピューターログを着想としてデザインしました。グレーやオフホワイトを基調とした配色でレトロなコンピューターをイメージし、ボタンやリンクのホバー時にはネオンカラーのグローエフェクトを取り入れることで、サイバー感をアクセントとして加えています。また、キービジュアルに青空の中の飛行機を採用し、旅への期待感や開放感を表現しました。",
+        stack: "v2, v3: Next.js / TypeScript / Tailwind CSS /\nZod / PostgreSQL / Neon / Vercel / Heroicons\nv1: React / TypeScript / Firebase / Firestore",
+        challenges: [
+            "ReactからNext.jsへ移行し、App RouterやSSRを取り入れながらリファクタリングを行いました。",
+            "v3ではFigmaでのデザイン設計からNext.jsによるUI実装まで一貫して行い、ビジュアルデザインを全面的に刷新しました。",
+            "既存機能を活かしながらデザインを刷新し、短期間で効率的にリニューアルを進めました。",
+        ],
+        demoUrl: "https://travelog-newui.vercel.app/",
+        figmaUrl:
+            "https://www.figma.com/design/vnP31nIxxD68gohWPgbqBO/Portfolio?node-id=8-414&t=5AXzkMJUDuGmGoLs-1",
+        githubUrl: "https://github.com/yumiirrii/travelog-newui",
     },
 };
 
@@ -125,40 +145,57 @@ export const othersDetailData = [
     {
         mainImage: "/detail-reportmaker-main.png",
         largeImage: "/detail-reportmaker-large.png",
-        name: "REPORT MAKER",
+        name: "Report Maker",
         overview:
-            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
-        year: "2026.06",
+            "ステップ形式の入力UIで、週報を効率的に作成・管理できるレポート作成アプリ",
+        year: "2023.09 (v1) / 2024.06 (v2) / 2026.02 (UI Refresh)",
         concept:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
-        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
-        challenges:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+            "BEFORE：手書きレポートをイメージし、紙を連想させるベージュを基調としたデザインを採用しました。\nAFTER：コンセプトは維持しながら、ペールイエローやオレンジを基調とした明るい配色に刷新し、テキストの視認性を向上させました。アクセントカラーにインディゴブルーを取り入れ、爽やかで知的な印象に仕上げました。",
+        stack: "Vue.js 3 (v2) / JavaScript / Java (Spring Boot) / Thymeleaf (v1) /\nMyBatis / PostgreSQL / AWS",
+        challenges: [
+            "Spring Boot・Vue.jsを用いて、バックエンドからフロントエンドまで一貫して実装しました。",
+            "アコーディオンやモーダル、ステップ形式の入力UIを実装し、直感的に操作できる体験を目指しました。",
+            "AWSへデプロイを行い、本番環境で動作するアプリとして公開しました。",
+        ],
+        figmaUrl:
+            "https://www.figma.com/design/vnP31nIxxD68gohWPgbqBO/Portfolio?node-id=9-1718&t=5AXzkMJUDuGmGoLs-1",
+        githubUrl: "https://github.com/yumiirrii/report-maker-vue",
     },
     {
         mainImage: "/detail-movingapp-main.png",
         largeImage: "/detail-movingapp-large.png",
-        name: "moving app",
+        name: "Moving App",
         overview:
-            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
-        year: "2026.06",
+            "引っ越し準備の「やること」と「買うもの」を整理できる2画面構成のシンプルなタスク管理アプリ",
+        year: "2021.09 (v1) / 2023.12 (v2) / 2024.05 (v3) / 2026.03 (UI Refresh)",
         concept:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
-        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
-        challenges:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+            "BEFORE：画面ごとにブルーとピンクのアクセントカラーを使い分け、アイコンや丸みのあるフォントを取り入れることで、親しみやすくポップな印象に仕上げました。\nAFTER：カラーを画面全体の背景や要素に展開することで、画面の切り替えを直感的に認識できるデザインへ変更しました。また、ガラスモーフィズムや立体的なグラフィックを取り入れ、奥行きとデジタル感のある、現代的なビジュアル表現を目指しました。",
+        stack: "React (v3) / TypeScript (v3) /\nVue.js 3 (v2) / Vue.js 2 (v1) / JavaScript (v1, 2) /\nFirebase / Firestore / Font Awesome",
+        challenges: [
+            "Vue.js 2、Vue.js 3、Reactと異なるフレームワークを段階的に経験し、コンポーネント設計や状態管理の違いを理解しました。",
+            "Firebaseを利用し、データ管理やWebアプリの公開環境構築まで一通り実装しました。",
+            "FigmaでワイヤーフレームからUIデザインを作成し、実装前に画面設計を整理するプロセスを経験しました。",
+        ],
+        figmaUrl:
+            "https://www.figma.com/design/vnP31nIxxD68gohWPgbqBO/Portfolio?node-id=9-3097&t=5AXzkMJUDuGmGoLs-1",
+        githubUrl: "https://github.com/yumiirrii/moving-app-react",
     },
     {
         mainImage: "/detail-artistapp-main.png",
         largeImage: "/detail-artistapp-large.png",
-        name: "artist app",
+        name: "Artist App",
         overview:
-            "架空のコスメティックブランド「METAMORF（メタモルフ）」の商品閲覧・管理アプリ",
-        year: "2026.06",
+            "1950年代以降の現代アート作品を年代別に紹介するキュレーションサイト",
+        year: "2021.03",
         concept:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
-        stack: "Next.js/TypeScript/Tailwind CSS/\nApp Router/React Hook Form/Zod/\nPrisma/PostgreSQL/Docker/\nHeroicons/Sonner",
-        challenges:
-            "ストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザインストリートアパレルブランドを着想に、モダンでミニマルな世界観の中に前衛的な要素を取り入れたデザイン",
+            "現代アートギャラリーの展示空間をイメージし、ホワイトを基調にアクセントカラーとしてピンクを使用しました。作品を主役として引き立てるため、余白を広く設け、クリーンでモダンなデザインを目指しました。",
+        stack: "Java (Spring Boot) / Thymeleaf /\nDOMA2 / SQL / Bootstrap / Font Awesome",
+        challenges: [
+            "初めてのアプリ開発として、要件定義から設計、実装、テストまで開発工程全体を経験しました。",
+            "CRUD機能の実装を通して、サーバーサイド処理やデータベースアクセスの流れを理解しました。",
+            "UIライブラリを活用し、機能だけでなく操作性や見た目にもこだわって実装しました。",
+        ],
+        figmaUrl:
+            "https://www.figma.com/design/vnP31nIxxD68gohWPgbqBO/Portfolio?node-id=12-3416&t=5AXzkMJUDuGmGoLs-1",
     },
 ];

@@ -10,14 +10,17 @@ export default function Home() {
     return (
         <div className="landing-bg bg-cover bg-center w-full min-w-full min-h-svh flex flex-col">
             <NavigationBar />
-            {/* ヒーロー */}
-            <Hero />
 
-            {/* 自己紹介エリア */}
-            <AboutSection about={data.about} />
+            <main className="max-w-[1600px] w-full mx-auto flex flex-col">
+                {/* ヒーロー */}
+                <Hero />
 
-            {/* Work一覧エリア */}
-            <WorksSection works={data.works} />
+                {/* 自己紹介エリア */}
+                <AboutSection about={data.about} />
+
+                {/* Work一覧エリア */}
+                <WorksSection works={data.works} />
+            </main>
         </div>
     );
 }

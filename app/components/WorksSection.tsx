@@ -21,7 +21,10 @@ type Props = {
 
 export const WorksSection = ({ works }: Props) => {
     return (
-        <div className="w-full px-8 sm:px-20 lg:px-35 pt-20 pb-30 flex flex-col gap-y-10">
+        <div
+            className="w-full px-8 sm:px-20 lg:px-35 pt-20 pb-30 flex flex-col gap-y-10"
+            id="works"
+        >
             <Title title="Works" />
 
             <div className="w-full max-w-[420px] md:max-w-[880px] xl:max-w-[1200px] mx-auto flex flex-col">

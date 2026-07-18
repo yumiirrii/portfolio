@@ -17,7 +17,10 @@ type Props = {
 
 export const AboutSection = ({ about }: Props) => {
     return (
-        <div className="w-full flex-1 px-8 sm:px-15 lg:px-30">
+        <div
+            className="w-full flex-1 px-8 sm:px-15 lg:px-30 2xl:px-10"
+            id="about"
+        >
             <div className="w-full bg-[#272727] text-white px-8 sm:px-15 md:px-23 py-10 sm:py-13 rounded-4xl flex flex-col gap-y-13">
                 {/* About Me */}
                 <div className="flex flex-col gap-y-7">

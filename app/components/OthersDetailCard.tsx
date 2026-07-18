@@ -11,7 +11,9 @@ type Props = {
         year: string;
         concept: string;
         stack: string;
-        challenges: string;
+        challenges: string[];
+        figmaUrl: string;
+        githubUrl?: string;
     };
 };
 
@@ -34,13 +36,30 @@ export const OthersDetailCard = ({ detail }: Props) => {
                         <HeaderBlock header="Tech Stack" text={detail.stack} />
                         <HeaderBlock
                             header="Challenges/Learnings"
-                            text={detail.challenges}
+                            texts={detail.challenges}
                         />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 flex flex-col justify-end">
                         <div className="flex gap-x-5 justify-center sm:justify-end">
-                            <Button label="View Figma" state="primary" />
-                            <Button label="View GitHub" state="primary" />
+                            <a
+                                href={detail.figmaUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Button label="View Figma" state="primary" />
+                            </a>
+                            {detail.githubUrl && (
+                                <a
+                                    href={detail.githubUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Button
+                                        label="View GitHub"
+                                        state="secondary"
+                                    />
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -48,22 +67,22 @@ export const OthersDetailCard = ({ detail }: Props) => {
 
             {/* figma image */}
             <div className="flex flex-col lg:flex-row gap-10 justify-center">
-                <div className="flex-[3] min-w-0 max-w-[450px]">
-                    <Image
-                        src={detail.mainImage}
-                        width={450}
-                        height={300}
-                        alt="work detail app figma before"
-                        className="w-full h-auto object-contain"
-                        priority
-                    />
-                </div>
                 <div className={`flex-[4] min-w-0 max-w-[600px]`}>
                     <Image
                         src={detail.largeImage}
                         width={600}
                         height={300}
-                        alt="work detail app figma after"
+                        alt="work detail before-after image"
+                        className="w-full h-auto object-contain"
+                        priority
+                    />
+                </div>
+                <div className="flex-[3] min-w-0 max-w-[450px]">
+                    <Image
+                        src={detail.mainImage}
+                        width={450}
+                        height={300}
+                        alt="work detail main image"
                         className="w-full h-auto object-contain"
                         priority
                     />
