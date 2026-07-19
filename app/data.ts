@@ -6,8 +6,8 @@ export const navMenu = [
 
 export const landingData = {
     hero: {
-        nameJp: "入入 入入入",
-        nameEn: "Yyyyyy Iiiiiii",
+        nameJp: "入沢 友美子",
+        nameEn: "Yumiko Irisawa",
         job: "Frontend Engineer",
     },
     about: {
