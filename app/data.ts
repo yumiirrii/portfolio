@@ -130,7 +130,7 @@ export const featuredDetailData = {
             "1980年代に描かれたレトロフューチャーをコンセプトに、当時のコンピューターログを着想としてデザインしました。グレーやオフホワイトを基調とした配色でレトロなコンピューターをイメージし、ボタンやリンクのホバー時にはネオンカラーのグローエフェクトを取り入れることで、サイバー感をアクセントとして加えています。また、キービジュアルに青空の中の飛行機を採用し、旅への期待感や開放感を表現しました。",
         stack: "v2, v3: Next.js / TypeScript / Tailwind CSS /\nZod / PostgreSQL / Neon / Vercel / Heroicons\nv1: React / TypeScript / Firebase / Firestore",
         challenges: [
-            "ReactからNext.jsへ移行し、App RouterやSSRを取り入れながらリファクタリングを行いました。",
+            "ReactからNext.jsへ移行し、App Routerを採用するとともに、プロジェクト全体をリファクタリングしました。",
             "v3ではFigmaでのデザイン設計からNext.jsによるUI実装まで一貫して行い、ビジュアルデザインを全面的に刷新しました。",
             "既存機能を活かしながらデザインを刷新し、短期間で効率的にリニューアルを進めました。",
         ],
