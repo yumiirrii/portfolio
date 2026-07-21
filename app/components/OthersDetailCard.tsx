@@ -40,7 +40,7 @@ export const OthersDetailCard = ({ detail }: Props) => {
                         />
                     </div>
                     <div className="flex-1 flex flex-col justify-end">
-                        <div className="flex gap-x-5 justify-center sm:justify-end">
+                        <div className="flex flex-col sm:flex-row gap-5 items-center justify-center sm:justify-end">
                             <a
                                 href={detail.figmaUrl}
                                 target="_blank"
