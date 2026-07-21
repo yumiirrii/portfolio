@@ -10,7 +10,7 @@ export default function WorkDetailMetamorf() {
     return (
         <div className="landing-bg bg-cover w-full min-h-screen flex flex-col">
             <NavigationBar />
-            <div className="max-w-[1600px] w-full mx-auto px-8 sm:px-15 lg:px-30 pt-10 pb-20 flex flex-col gap-y-10">
+            <div className="max-w-[1600px] w-full mx-auto px-5 sm:px-15 lg:px-30 pt-10 pb-20 flex flex-col gap-y-10">
                 <DetailCard key={data.name} detail={data} />
                 <Link href="/work/travelog" className="w-full flex justify-end">
                     <Button label="Next Work: TRAVELOG" state="primary" />

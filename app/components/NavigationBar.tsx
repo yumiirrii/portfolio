@@ -12,7 +12,7 @@ export const NavigationBar = () => {
                     >
                         <Link
                             href={nav.path}
-                            className="inline-block px-2 pt-1 transition-opacity duration-200 hover:opacity-20"
+                            className="inline-block px-2 pt-1 transition-opacity duration-200 hover:opacity-60 active:opacity-30"
                         >
                             {nav.page}
                         </Link>
