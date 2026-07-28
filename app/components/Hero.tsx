@@ -5,8 +5,8 @@ export const Hero = () => {
     const data = landingData;
 
     return (
-        <div className="w-full h-auto pt-10 pb-16 md:pt-12 md:pb-20 font-display">
-            <div className="w-full px-6 md:px-12 xl:px-20 flex flex-col justify-start gap-y-12 md:gap-y-16 items-center">
+        <div className="w-full h-auto pt-10 pb-16 md:pt-3 md:pb-20 font-display">
+            <div className="w-full px-6 md:px-12 xl:px-20 flex flex-col justify-start gap-y-8 items-center">
                 <h1 className="text-[60px] md:text-[80px] lg:text-[100px] font-bold text-center whitespace-pre-wrap sm:whitespace-nowrap leading-[1.0] sm:leading-normal [-webkit-text-stroke:1px_black]">
                     {`DESIGN\n & \nCODE`}
                 </h1>
